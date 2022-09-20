@@ -1,0 +1,51 @@
+{
+  "contacts": [
+    {
+      "id": "d6BNWn56",
+      "name": "Patty ",
+      "company": "you tube",
+      "email": "brad@gmail.com",
+      "title": "Youtuber",
+      "mobile": "125483350",
+      "photo": "https://kreately.in/wp-content/uploads/2020/08/24081559/images-2020-08-24T081400.506.jpg",
+      "groupId": "1"
+    },
+    {
+      "id": "d6BNWn76",
+      "name": "Aida Bugg",
+      "company": "Apple",
+      "email": "brad@gmail.com",
+      "title": "Web Developer",
+      "mobile": "125483350",
+      "photo": "https://external-preview.redd.it/rK_knMShnIzXOi9G92I5AWQEiV83N61DD_Yq60ib5Ok.jpg?auto=webp&s=e6587373c6951fd2ada19038c20591865b92b941",
+      "groupId": "2"
+    },
+    {
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2tjcIPkT1GZZAPwNPzndMoVhxxhqI1vOJ3g&usqp=CAU",
+      "name": "Prasanth",
+      "email": "prasanth@gmail.com",
+      "mobile": 9347128304,
+      "company": "Infovision Inc",
+      "title": "Software Engineer",
+      "id": "0q2F89a"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "colleague"
+    },
+    {
+      "id": "2",
+      "name": "Family"
+    },
+    {
+      "id": "3",
+      "name": "Service"
+    },
+    {
+      "id": "4",
+      "name": "Development"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "contacts": [
+    {
+      "name": "Prasanth",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2tjcIPkT1GZZAPwNPzndMoVhxxhqI1vOJ3g&usqp=CAU",
+      "email": "prasanth@gmail.com",
+      "mobile": 9347128304,
+      "company": "Infovision Inc",
+      "title": "sdfgh",
+      "id": 1
+    },
+    {
+      "name": "Brad ",
+      "photo": "https://kreately.in/wp-content/uploads/2020/08/24081559/images-2020-08-24T081400.506.jpg",
+      "email": "user@gmail.com",
+      "mobile": 6345251823,
+      "company": "you tube",
+      "title": "kjhgfds",
+      "id": 2
+    }
+  ],
+  "signup": [
+    {
+      "name": "prasanth",
+      "email": "prasanth@gmail.com",
+      "password": "123456",
+      "mobile": 9347128304,
+      "id": 1
+    },
+    {
+      "name": "prasanth",
+      "email": "prasanth1@gmail.com",
+      "password": "147852",
+      "mobile": 36445785,
+      "id": 2
+    }
+  ]
+}

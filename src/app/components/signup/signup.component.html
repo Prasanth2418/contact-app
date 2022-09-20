@@ -1,0 +1,43 @@
+<div class="container mt-3 ">
+    <div class="row">
+        <div class="col-md-6 ">
+            <div class="card bg-light shadow-lg">
+                <div class="text-center ">
+                    <h1>SignUp</h1>
+                    <h6>Please enter your details to continue</h6>
+                </div>
+         
+                    <form [formGroup]="signupForm">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Name</label>
+                            <input type="text" formControlName="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
+                            
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Mobile no</label>
+                            <input type="number" formControlName="mobile" class="form-control" id="exampleInputmobile1" aria-describedby="numberHelp">
+                           
+                          </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input [type]="showType" class="form-control" id="exampleInputPassword1" formControlName="password">
+                          <div id="passwordHelp" class="form-text">Password must be more than 6 latters.</div>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input 
+                          (change)="showPassword($event)"
+                          type="checkbox" class="form-check-input">show password
+                        </div>
+                        <button type="submit" class="btn btn-danger" (click)="signUp()">Sign up</button>
+                      </form>
+                      <span class="my-3">Already registered? click here to <a routerLink="/" class="text-danger">login?</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+

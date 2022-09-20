@@ -1,0 +1,63 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <p class="h3" class="fw-bold text-danger">Add contact</p>
+            <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus deleniti autem ducimus quas adipisci maxime deserunt ad nostrum exercitationem. Incidunt laboriosam ex totam enim neque a dolores et, placeat temporibus.</p>
+
+        </div>
+    </div>
+</div>
+
+<!--Spinner-->
+<div *ngIf="loading">
+    <app-spinner></app-spinner>
+</div>
+
+<!---Error Mesage-->
+<div *ngIf="!loading && errorMessage">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <p class="h4 text-danger fw-bold">
+                 {{errorMessage}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-sm-4">
+           <form (submit)="createContact()  ">
+            <div class="mb-2">
+                <input type="text" placeholder="Name" class="form-control" name="name" [(ngModel)]="contact.name" required>
+            </div>
+            <div class="mb-2">
+                <input type="text" placeholder="Photo Url" class="form-control" name="photo" [(ngModel)]="contact.photo" >
+            </div>
+            <div class="mb-2">
+                <input type="email" placeholder="Email" class="form-control" name="email" [(ngModel)]="contact.email">
+            </div>
+            <div class="mb-2">
+                <input type="number" placeholder="Mobile" class="form-control" name="mobile" [(ngModel)]="contact.mobile">
+            </div>
+            <div class="mb-2">
+                <input type="text" placeholder="Company" class="form-control" name="company" [(ngModel)]="contact.company">
+            </div>
+            <div class="mb-2">
+                <input type="text" placeholder="Title" class="form-control" name="title" [(ngModel)]="contact.title">
+            </div>
+           
+            <div class="mb-2">
+                <input type="submit" value="Create" class="btn btn-danger">
+                <a routerLink="/contacts/list" class="btn btn-primary ms-2">Back</a>
+            </div>
+           </form>
+    </div>
+    <div class="col-sm-4">
+         <img [src]="contact.photo" alt="Please paste Image Url" class="contact-img" >
+    </div>
+
+</div>
+

@@ -1,0 +1,32 @@
+<div class="container mt-3 ">
+    <div class="row">
+        <div class="col-md-6 ">
+            <div class="card bg-light shadow-lg">
+                <div class="text-center ">
+                    <h1>Login</h1>
+                    <h6>Please enter your credintials to continue</h6>
+                </div>
+              
+                    <form [formGroup]="loginForm">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+                          <div id="emailHelp" class="form-text ">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input [type]="showType" class="form-control" id="exampleInputPassword1" formControlName="password">
+                        </div>
+                        <div class="mb-3 form-check">
+                         
+                            <input 
+                            (change)="showPassword($event)"
+                            type="checkbox" class="form-check-input">show password
+                        </div>
+                        <button type="submit" class="btn btn-danger" (click)="login()">Login</button>
+                      </form>
+                <span class="my-3">New user? click here to <a routerLink="/signup" class="text-danger">Register?</a></span>
+            </div>
+        </div>
+    </div>
+</div>

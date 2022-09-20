@@ -1,0 +1,14 @@
+.card{
+    margin-top: 10px;
+    border: none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 3%;
+    left: 35%;
+    bottom: 3%;
+    
+}
+.form-lable{
+    color: red;
+}
